@@ -26,18 +26,18 @@
         },
         {
             "name": "rt-spark-openocd",
-            "executable": "${workspaceRoot}/target/thumbv7em-none-eabihf/debug/rtthread",
+            "executable": "${workspaceRoot}/target/thumbv7em-none-eabihf/debug/examples/hello",
             "request": "launch",
             "type": "cortex-debug",
             "runToEntryPoint": "entry",
-            "targetId": "STM32F407ZG",
+            "targetId": "STM32H750VGT6",
             "servertype": "openocd",
             "configFiles": [
                 "interface/stlink-v2.cfg",
-                "target/stm32f4x.cfg"
+                "target/stm32h7x.cfg"
             ],
-            "armToolchainPath": "/opt/rt-thread/tools/gnu_gcc/gcc-arm-none-eabi/bin/",
-            "gdbPath": "/opt/rt-thread/tools/gnu_gcc/gcc-arm-none-eabi/bin/arm-none-eabi-gdb",
+            "armToolchainPath": "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/",
+            "gdbPath": "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gdb",
         },
     ]
 }
